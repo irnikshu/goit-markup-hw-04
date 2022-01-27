@@ -219,12 +219,28 @@ img {
   margin-right: 30px;
 }
 .descr::before {
-  width: 65px;
-  height: 70px;
-  background-color: red;
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
   content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 30px;
+}
+.icon-tarelka::before {
   background-image: url(../image/Tarelka.svg);
 }
+.icon-clock::before {
+  background-image: url(../image/Clock.svg);
+}
+.icon-monitor::before {
+  background-image: url(../image/monitor.svg);
+}
+.icon-spaceman::before {
+  background-image: url(../image/spaceman.svg);
+}
+
 .work {
   display: flex;
   /* margin-bottom: 94px; */
@@ -312,6 +328,16 @@ img {
 .description {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.member-social-list {
+  display: flex;
+}
+.member-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: red;
+  border-radius: 50%;
+  display: block;
 }
 
 /* Футер */
