@@ -331,6 +331,9 @@ img {
 }
 .member-social-list {
   display: flex;
+  justify-content: center;
+}
+
 }
 .member-social-link {
   width: 44px;
@@ -338,6 +341,9 @@ img {
   background-color: red;
   border-radius: 50%;
   display: block;
+}
+.member-social-item + .member-social-item {
+  margin-left: 22px;
 }
 
 /* Футер */
