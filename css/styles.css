@@ -145,6 +145,21 @@ img {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+.link::before {
+  display: block;
+  height: 12px;
+  width: 16px;
+  content: '';
+
+  /* background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 10px; */
+}
+.icon-envelope::before {
+  background-image: url(../image/envelope.svg);
+}
+
 /* Hero */
 .hero {
   background-color: #2f303a;
@@ -218,8 +233,16 @@ img {
 .features-list .descr:not(:last-child) {
   margin-right: 30px;
 }
+/* .descr::before {
+  height: 120px;
+  background-color: #f5f4fa;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 30px;
+} */
 .descr::before {
-  display: block;
   height: 120px;
   background-color: #f5f4fa;
   content: '';
@@ -228,9 +251,11 @@ img {
   background-position: center;
   margin-bottom: 30px;
 }
-.icon-tarelka::before {
+
+.icon-tarela::before {
   background-image: url(../image/Tarelka.svg);
 }
+
 .icon-clock::before {
   background-image: url(../image/Clock.svg);
 }
@@ -333,17 +358,26 @@ img {
   display: flex;
   justify-content: center;
 }
-
-}
 .member-social-link {
   width: 44px;
   height: 44px;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.member-social-link:hover,
+.member-social-link:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.member-social-icon {
+  fill: #afb1b8;
+}
+
 .member-social-item + .member-social-item {
-  margin-left: 22px;
+  margin-left: 10px;
 }
 
 /* Футер */
