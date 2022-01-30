@@ -130,6 +130,11 @@ img {
   display: flex;
   margin-left: auto;
 }
+.auth-nav{
+  display: flex;
+
+}
+
 .auth-nav .link {
   color: #757575;
   text-decoration: none;
@@ -141,24 +146,36 @@ img {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
-.link::before {
-  display: block;
-  height: 12px;
-  width: 16px;
-  content: '';
+.Icon-envelope{
+  fill: #757575;
+}
+.icon-envel:hover,
+.icon-envel:focus{
+  fill: var(--accent-color);
+}
+.icon-phone:hover,
+.icon-phone:focus{
+  fill: var(--accent-color);
+}
+.auth-icon{
+  margin-right: 10px;
+}
+
+.title-footer{
+  margin-left: 156px;
+}
 
   /* background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-right: 10px; */
 }
-.icon-envelope::before {
-  background-image: url(../image/envelope.svg);
-}
+
 
 /* Hero */
 .hero {
@@ -233,37 +250,22 @@ img {
 .features-list .descr:not(:last-child) {
   margin-right: 30px;
 }
-/* .descr::before {
-  height: 120px;
-  background-color: #f5f4fa;
-  content: '';
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-bottom: 30px;
-} */
-.descr::before {
-  height: 120px;
-  background-color: #f5f4fa;
-  content: '';
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.feature-icons-list {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
-
-.icon-tarela::before {
-  background-image: url(../image/Tarelka.svg);
+.feature-icons-list .feature-icons-item:not(:last-child) {
+  margin-right: 30px;
 }
-
-.icon-clock::before {
-  background-image: url(../image/Clock.svg);
-}
-.icon-monitor::before {
-  background-image: url(../image/monitor.svg);
-}
-.icon-spaceman::before {
-  background-image: url(../image/spaceman.svg);
+.feature-icons-item {
+  display: flex;
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 270px;
+  align-items: center;
+  justify-content: center;
 }
 
 .work {
@@ -370,21 +372,52 @@ img {
 .member-social-link:hover,
 .member-social-link:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
 }
 .member-social-icon {
   fill: #afb1b8;
 }
-
+.member-social-icon:hover,
+.member-social-icon:focus {
+  fill: #ffffff;
+}
 .member-social-item + .member-social-item {
   margin-left: 10px;
 }
-
+/* постоянные клиенты */
+.section-client {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+.client-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #afb1b8;
+}
+.client-icon {
+  fill: #afb1b8;
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+}
+.client-list .client-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Футер */
 footer {
   background-color: #2f303a;
   padding-bottom: 60px;
   padding-top: 60px;
+  display: flex;
 }
 .logo-foot {
   display: block;
@@ -418,6 +451,38 @@ footer {
 }
 .auth-footer .contact:not(:last-child) {
   margin-bottom: 9px;
+}
+.title-footer {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer-icon {
+  fill: #ffffff;
+}
+.footer-list {
+  display: flex;
+  justify-content: left;
+}
+.footer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+}
+.footer-list .footer-item:hover {
+  background-color: var(--accent-color);
+}
+.footer-list .footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-name {
+  display: flex;
+}
+.addres{
+  margin-right: 70px;
 }
 
 /* Портфолио */
@@ -473,7 +538,9 @@ text-decoration: none;
   /* margin-right: 30px; */
   margin: 15px;
   width: 370px;
+  cursor: pointer;
   /* background-color: chartreuse; */
+
 }
 .element .element-descr {
   padding-left: 24px;
@@ -484,6 +551,7 @@ text-decoration: none;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+
 /* .element:nth-child(3n) {
   margin-right: 0; */
 
