@@ -141,6 +141,8 @@ img {
   letter-spacing: 0.02em;
   font-size: 14px;
   line-height: 1.14;
+  display: flex;
+  align-items: center;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -320,7 +322,7 @@ img {
 .button-portfolio:focus {
   color: var(--primare-white-color);
   background-color: var(--accent-color);
-  border: 2px solid var(--accent-color);
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -410,10 +412,15 @@ img {
   display: flex;
   width: 170px;
   height: 92px;
+
+  background-color: #ffffff;
+}
+.client-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
 }
 .client-icon {
@@ -430,8 +437,8 @@ img {
 .client-item:hover {
   border: 2px solid var(--accent-color);
 }
-.client-item:hover .client-icon,
-.client-item:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
   border-color: 4px solid var(--accent-color);
 }
@@ -444,7 +451,7 @@ footer {
 }
 .footer_container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   /* justify-content: flex-start; */
 }
 .footer-list {
@@ -502,13 +509,17 @@ footer {
   justify-content: center;
 }
 .footer-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 }
 .footer-list {
   display: flex;
@@ -584,6 +595,7 @@ text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+
   /* background-color: chocolate; */
   /* margin-bottom: 94px; */
 }
@@ -604,9 +616,18 @@ text-decoration: none;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-.element:hover,
+/* .element:hover,
 .element:focus {
-  border: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+.cards {
+  text-decoration: none;
+  display: block;
+}
+.cards:hover,
+.cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
