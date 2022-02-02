@@ -434,14 +434,16 @@ img {
 .client-list .client-item:not(:last-child) {
   margin-right: 30px;
 }
-.client-item:hover {
-  border: 2px solid var(--accent-color);
+.client-link:hover,
+.client-link:focus {
+  border-color: 4 px solid var(--accent-color);
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
-  fill: var(--accent-color);
   border-color: 4px solid var(--accent-color);
+  fill: var(--accent-color);
 }
+
 /* Футер */
 footer {
   background-color: #2f303a;
@@ -582,6 +584,7 @@ text-decoration: none;
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .project-list .title {
   color: #212121;
